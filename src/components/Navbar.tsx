@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from 'react-scroll'
+import Logo from "../../public/Frame 37142.png"
 import { useTheme } from "next-themes"; 
 import { Sun, Moon } from "lucide-react";
 
@@ -15,8 +16,11 @@ const Navbar: React.FC = () => {
     <header className="fixed top-0 left-0 w-full flex items-center text-white  justify-between py-4 px-8 bg-transparent dark:bg-gray-900  dark:text-white shadow-lg z-50">
       {/* Logo */}
       <div className="text-2xl font-bold px-16">
-        <Link to="/">
-          <span className="text-blue-500">DE</span>LAR
+        <Link className="flex flex-row items-center" to="/">
+         <img src={Logo} alt=""  />
+          <span className="text-blue-500 ml-3 hidden md:block">DE</span>LAR
+
+
         </Link>
       </div>
 
@@ -75,7 +79,7 @@ const Navbar: React.FC = () => {
           </li>
           <li>
             <Link
-              to="/why-us"
+              to="why-us"
               className="hover:text-blue-500 transition-colors duration-200"
             >
               Why Us
@@ -91,7 +95,7 @@ const Navbar: React.FC = () => {
           </li>
           <li>
             <Link
-              to="/faqs"
+              to="faqs"
               className="hover:text-blue-500 transition-colors duration-200"
             >
               FAQs

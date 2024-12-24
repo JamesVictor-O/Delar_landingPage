@@ -2,7 +2,7 @@ import React from "react";
 
 const Benefits: React.FC = () => {
   return (
-    <section className="py-16 px-4 bg-white">
+    <section className="py-16 px-4 bg-white h-screen">
       <div className="max-w-6xl mx-auto text-center">
       
         <div className="mb-6">

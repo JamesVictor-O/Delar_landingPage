@@ -23,10 +23,6 @@ const HeroComponent = () => {
         </button>
       </div>
     </section>
-    <Benefits/>
-    <div className="py-2">
-    <Footer/>
-    </div>
     </div>
   )
 }

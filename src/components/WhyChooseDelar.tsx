@@ -4,7 +4,7 @@ import conflixImage from "../../public/5672934.jpg";
 
 const WhyChooseDelar = () => {
   return (
-    <div className="flex flex-col px-5 items-center mt-10 md:my-8 md:h-screen">
+    <div className="flex flex-col px-5 items-center mt-10 md:pt-10 md:h-screen" id="why-us">
       <div className="flex items-center  flex-col md:w-[60%]">
         <h2 className="font-montserrat text-xl md:text-3xl font-medium md:font-bold">
           Why Choose Delar?

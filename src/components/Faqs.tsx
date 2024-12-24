@@ -49,19 +49,19 @@ const Faqs = () => {
         )
     }
   return (
-    <div className="px-8 flex md:flex-row flex-col  justify-between">
-      <div className="flex flex-col md:w-[40%]">
+    <div className="px-8 flex md:flex-row flex-col  justify-between md:h-screen mb-6" id="faqs">
+      <div className="flex flex-col items-center md:items-start md:w-[40%] md:mt-20">
         <h2 className="font-montserrat text-xl md:text-3xl font-medium md:font-bold">
           Frequently Asked Questions
         </h2>
-        <p className="font-wix text-lg font-normal text-start mt-4">
+        <p className="font-wix text-sm font-normal text-center mt-2 md:text-start">
           Everything you need to know about Delar. Can’t find the answer you’re
           looking for? Please reach out to our dedicated team—we’re here to help
         </p>
       </div>
 
       {/* faqs */}
-      <div className="md:w-[55%]">
+      <div className=" mt-10 md:mt-0 md:w-[55%]">
         {faqs.map((question:any) =>
           <div className="w-full border border-gray-400 py-5 px-3 shadow-lg rounded-xl mb-4 transition-transform hover:scale-105" key={question.id}>
           <div className="flex flex-row justify-between items-center">

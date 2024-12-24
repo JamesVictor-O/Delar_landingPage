@@ -1,19 +1,21 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Logo from "../../public/Frame 37142.png"
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-white text-gray-800 py-8">
-      <div className="max-w-6xl mx-auto px-4 md:px-8">
+    <footer className="bg-white text-gray-800 py-8 border-t-2">
+      <div className="mx-10 py-4 px-4 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo and Social Media */}
           <div className="flex flex-col items-center md:items-start">
-            <div className="mb-4">
+            <div className="mb-4 flex flex-row items-center">
               <img
-                src="/"
+                src={Logo}
                 alt="Delar"
                 className="w-12 h-12"
               />
+               <span className="text-blue-500 ml-3 hidden text-3xl md:block">DELAR</span>
             </div>
             <div className="flex space-x-4">
               <a

@@ -1,8 +1,10 @@
-import HeroComponent from "./components/HeroComponent"
+import WhyChooseDelar from "./components/WhyChooseDelar"
+import Faqs from "./components/Faqs"
 const RootLayout = () => {
   return (
     <div>
-      <HeroComponent/>
+        <WhyChooseDelar/>
+        <Faqs/>
     </div>
   )
 }

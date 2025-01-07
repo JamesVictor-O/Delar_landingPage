@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { Link } from 'react-scroll'
-import Logo from "../../public/Frame 37142.png"
-import { useTheme } from "next-themes"; 
+import { Link } from "react-scroll";
+import Logo from "../../public/Frame 37142.png";
+import { useTheme } from "next-themes";
 import { Sun, Moon } from "lucide-react";
 
 const Navbar: React.FC = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const { theme, setTheme } = useTheme(); 
+  const { theme, setTheme } = useTheme();
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -15,12 +15,12 @@ const Navbar: React.FC = () => {
   return (
     <header className="fixed top-0 left-0 w-full flex items-center text-white  justify-between py-4 px-8 bg-transparent dark:bg-gray-900  dark:text-white shadow-lg z-50">
       {/* Logo */}
-      <div className="text-2xl font-bold px-16">
+      <div className="text-2xl font-bold md:px-16">
         <Link className="flex flex-row items-center" to="/">
-         <img src={Logo} alt=""  />
-          <span className="text-blue-500 ml-3 hidden md:block">DE</span>LAR
-
-
+          <img src={Logo} alt="" />
+          <div className="hidden md:block">
+            <span className="text-blue-500 ml-3 ">DE</span>LAR
+          </div>
         </Link>
       </div>
 
@@ -101,21 +101,19 @@ const Navbar: React.FC = () => {
               FAQs
             </Link>
           </li>
-
-         
         </ul>
         <li>
-            <button
-              className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-400 dark:bg-gray-700 hover:bg-blue-500 dark:hover:bg-blue-500 transition-colors duration-200"
-              onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-            >
-              {theme === "light" ? (
-                <Moon className="w-5 h-5 text-gray-900" />
-              ) : (
-                <Sun className="w-5 h-5 text-white" />
-              )}
-            </button>
-          </li>
+          <button
+            className="flex items-center justify-center w-10 h-10 rounded-full bg-gray-400 dark:bg-gray-700 hover:bg-blue-500 dark:hover:bg-blue-500 transition-colors duration-200"
+            onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+          >
+            {theme === "light" ? (
+              <Moon className="w-5 h-5 text-gray-900" />
+            ) : (
+              <Sun className="w-5 h-5 text-white" />
+            )}
+          </button>
+        </li>
       </nav>
     </header>
   );

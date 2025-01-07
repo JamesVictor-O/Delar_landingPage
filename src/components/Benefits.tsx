@@ -2,7 +2,7 @@ import React from "react";
 
 const Benefits: React.FC = () => {
   return (
-    <section className="py-16 px-4 bg-white h-screen">
+    <section className="py-16 px-4 bg-white md:h-screen">
       <div className="max-w-6xl mx-auto text-center">
       
         <div className="mb-6">
@@ -50,7 +50,7 @@ const Benefits: React.FC = () => {
             </p>
 
             {/* Line Connector */}
-            <div className="absolute w-full h-1 bg-gray-300 top-12 left-28 md:left-0 md:top-auto md:h-full md:w-1 md:bottom-[-3.5rem]"></div>
+            <div className="absolute hidden w-full h-1 bg-gray-300 top-12 left-28 md:left-0 md:top-auto md:h-full md:w-1 md:bottom-[-3.5rem]"></div>
           </div>
 
           {/* Step 3 */}

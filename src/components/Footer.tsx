@@ -47,7 +47,7 @@ const Footer: React.FC = () => {
                 <i className="fab fa-twitter"></i>
               </a>
               <a
-                href="https://www.facebook.com/profile.php?id=100088954730570"
+                href="https://web.facebook.com/Eptanode.Delar"
                 target="_blank"
                 rel="noopener noreferrer"
                 className=" hover:text-blue-500"
